@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyrule Haberdashery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="title_heading">
+            <img src="../dist/static/images/beedle.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center" id="main_logo" >
+            Hylian Haberdashery
+        </a>
+        <form action="" id="input-form">
+            <input type="text" class="form-input" id="nameInput" placeholder="Name">
+            <input type="text" class="form-input" id="ageInput" placeholder="Age">
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+        <img src="../dist/static/images/745px-TotK_English_Logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center zelda-logo" >
+    </div>
+</nav>
+
+<!-- Off-Canvas -->
+<button class="btn btn-primary cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">View Cart</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+<div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">User's Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="user-cart">
+
+        </tbody>
+    </table>
+    <hr>
+    <h6>Total: </h6>
+</div>
+ </div>
+
+    <!-- MAIN BODY IMAGES -->
+      <section class="main-grid">
+        <div class="card main-items" style="width: 18rem;">
+            <img src="../dist/static/images/Untitled design (1).png" class="card-img-top grid-items" alt="Hylian Shield" height:="60px" id="climbing">
+            <div class="card-body">
+              <h5 class="card-title">Hylian Shield</h5>
+              <p class="card-text"> $50</p>
+              <p class="card-text"> A sturdy shild that is bound to help keep you alive a bit longer. Worthy of a true hylian hero!</p>
+              <a href="#" class="btn btn-primary item-btn" data-id="itemBtnA">Add to Cart</a>
+            </div>
+          </div>
+        
+          <div class="card main-items" style="width: 18rem;">
+            <img src="../dist/static/images/TotK_Tunic_of_Memories_Icon.png" class="card-img-top grid-items" alt="Tunic of Memories">
+            <div class="card-body">
+              <h5 class="card-title">Tunic of Memories</h5>
+              <p class="card-text">$25</p>
+              <p class="card-text"> What's better than a stylish blue tunic to adventure in after being resurrected?! </p>
+              <a href="#" class="btn btn-primary item-btn" data-id="itemBtnB">Add to Cart</a>
+            </div>
+          </div>
+        
+          <div class="card main-items" style="width: 18rem;">
+            <img src="../dist/static/images/TotK_Majora's_Mask_Icon.png" class="card-img-top grid-items" alt="Majora's Mask">
+            <div class="card-body">
+              <h5 class="card-title">Majora's Mask</h5>
+              <p class="card-text">$100,000</p>
+              <p class="card-text">A strange mask that is at once ordinary and alluring...eminating a palpable aura of menacing power.</p>
+              <a href="#" class="btn btn-primary item-btn" data-id="itemBtnC">Add to Cart</a>
+            </div>
+          </div>
+        
+          <div class="card main-items" style="width: 18rem;">
+            <img src="../dist/static/images/TotK_Extravagant_Saddle_Icon.png" class="card-img-top grid-items" alt="Extravagent Saddle">
+            <div class="card-body">
+              <h5 class="card-title">Extravagent Saddle</h5>
+              <p class="card-text">$75</p>
+              <p class="card-text">Who say's you need to ride around without class? Pimp your ride with this luxurious horse-seat!</p>
+              <a href="#" class="btn btn-primary item-btn" data-id="itemBtnD">Add to Cart</a>
+            </div>
+          </div>
+        
+          <div class="card main-items" style="width: 18rem;">
+            <img src="../dist/static/images/TotK_Snowquill_Tunic_Icon.png" class="card-img-top grid-items" alt="Snowquill Tunic" height:="60px" id="climbing">
+            <div class="card-body">
+              <h5 class="card-title">Snowquill Tunic</h5>
+              <p class="card-text">$30</p>
+              <p class="card-text">You can't very well go into the mountains unprepared?? A tunic to keep you warm at the coldest hights</p>
+              <a href="#" class="btn btn-primary item-btn" data-id="itemBtnE">Add to Cart</a>
+            </div>
+          </div>
+        
+          <div class="card main-items" style="width: 18rem;">
+            <img src="../dist/static/images/TotK_Archaic_Legwear_Icon.png" class="card-img-top grid-items" alt="Archaic Legwear">
+            <div class="card-body">
+              <h5 class="card-title">Archaic Legwear</h5>
+              <p class="card-text">$15</p>
+              <p class="card-text">When you need a breeze and pants just won't cut it. I mean, if it was good enough for the ancients then it's good enough for you!
+              </p>
+              <a href="#" class="btn btn-primary item-btn" data-id="itemBtnF">Add to Cart</a>
+            </div>
+          </div>
+        
+          <div class="card main-items" style="width: 18rem;">
+            <img src="../dist/static/images/TotK_Boko_Bow_Model.png" class="card-img-top grid-items" alt="Boko Bow">
+            <div class="card-body">
+              <h5 class="card-title">Boko Bow</h5>
+              <p class="card-text">$15</p>
+              <p class="card-text">Best not to leave home without it. In these monster-filled times, its best to keep them as far away as possible.</p>
+              <a href="#" class="btn btn-primary item-btn" data-id="itemBtnG">Add to Cart</a>
+            </div>
+          </div>
+        
+          <div class="card main-items" style="width: 18rem;">
+            <img src="../dist/static/images/TotK_Tunic_of_Twilight_Icon.png" class="card-img-top grid-items" alt="Tunic of Twilight">
+            <div class="card-body">
+              <h5 class="card-title">Tunic of Twilight</h5>
+              <p class="card-text">$45</p>
+              <p class="card-text">Feeling a bit retro? Perhaps you're more of a "forest type." Whatever your reason, you can't go wrong with this classic tunic. </p>
+              <a href="#" class="btn btn-primary item-btn" data-id="itemBtnH">Add to Cart</a>
+            </div>
+          </div>
+        </section>
+</body>
+</html>

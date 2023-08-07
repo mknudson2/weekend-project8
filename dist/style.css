@@ -1,0 +1,101 @@
+/* Link's blue: rgba (0, 159, 179, 255 */
+
+
+body {
+    background-image: url("../dist/static/images/shop.jpg");
+    background-position: 50% 15%;
+
+}
+
+/* //////////////////////// */
+/* NAVBAR */
+/* //////////////////////// */
+
+#main_logo {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    top: -22px;
+    left: 10px;
+}
+
+#title_heading {
+    font-size: 58px;
+    padding-left: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.zelda-logo {
+    width: 100px;
+    height: auto;
+}
+
+#input-form{
+    margin-left: 275px;
+}
+
+.form-input {
+    margin-right: 10px;
+}
+
+#submit-btn {
+    background-color: green;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+/* //////////////////////// */
+/* NAVBAR */
+/* //////////////////////// */
+
+.cart-btn {
+    position: relative;
+    right: -1600px;
+    top: 25px;
+}
+
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 35px;
+    width: 75%;
+    margin-left: 13%;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+#climbing {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#memories {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.grid-items {
+    padding: 15px;
+}
+
+.main-items {
+    box-shadow: 5px 5px 5px black;
+
+}
+
+.main-items:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.item-btn:hover {
+    background-color: success
+}
